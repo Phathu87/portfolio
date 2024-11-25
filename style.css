@@ -1,0 +1,55 @@
+/* Custom scrollbar styling for the vehicle list */
+#vehicleList {
+    scrollbar-width: thin;
+    scrollbar-color: #cbd5e0 #edf2f7;
+  }
+  
+  #vehicleList::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  #vehicleList::-webkit-scrollbar-track {
+    background: #edf2f7;
+  }
+  
+  #vehicleList::-webkit-scrollbar-thumb {
+    background-color: #cbd5e0;
+    border-radius: 4px;
+  }
+  
+  /* Loading spinner styles */
+  #loadingSpinner {
+    border: 4px solid #edf2f7;
+    border-top: 4px solid #4a5568;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Map and list container adjustments */
+  #map {
+    height: 400px; /* Set a fixed height for the map for better display */
+  }
+  
+  /* Center-align text in popup for cleaner look */
+  .leaflet-popup-content {
+    text-align: center;
+    font-size: 0.875rem;
+  }
+  
+  /* Additional padding for list items */
+  #vehicleList li {
+    padding: 10px;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  
+  #vehicleList li:last-child {
+    border-bottom: none;
+  }
+  
